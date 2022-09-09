@@ -11,7 +11,7 @@ public class YourCartPage {
     public YourCartPage(Page driver){
         this.driver = driver;
         this.checkoutButton = driver.locator("id=checkout");
-        this.removeButton = driver.locator("id=remove-sauce-labs-backpack");
+        this.removeButton = driver.locator("button.cart_button");
     }
 
     public void clickOnCheckoutButton(){

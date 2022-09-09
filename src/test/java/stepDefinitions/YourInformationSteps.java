@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import pages.YourInformationPage;
 import utilities.DriverManager;
 
@@ -20,5 +21,9 @@ public class YourInformationSteps {
     @And("I click on continue button")
     public void clickOnContinueButton(){
         yourInformationPage.clickOnContinueButton();
+    }
+    @Then("You should see an error message that says {string}")
+    public void verifyErrorDisplayed(String error){
+        yourInformationPage.verifyErrorDisplayed(error);
     }
 }

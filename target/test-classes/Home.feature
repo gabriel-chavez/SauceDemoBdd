@@ -37,7 +37,7 @@ Background: User is logged into sauce demo web page
       | Sauce Labs Backpack   |
       | Sauce Labs Bike Light |
 
-     # Test 3 Verificar producto eliminado
+     # Test 4 Verificar producto eliminado
   Scenario Outline: Add products to cart
     When I am in the home page
     And I check the quantity of products in de cart

@@ -14,4 +14,12 @@ Feature: As a user I should be able to checkout a purchase
     And I click on finish button
     Then I should see a message that says "THANK YOU FOR YOUR ORDER"
 
+    #test 5 verificar error en información de checkout
+  Scenario: Sauce Labs Backpack checkout error
+    When I add sauce labs back pack product to the cart
+    And I click on the cart icon
+    And I click on checkout button
+    And I click on continue button
+    Then You should see an error message that says "Error: First Name is required"
+
 
